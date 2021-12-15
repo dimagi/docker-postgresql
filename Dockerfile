@@ -1,6 +1,6 @@
 # PostgreSQL service with pghashlib and PL-Proxy
 
-FROM postgres:12
+FROM postgres:10.17
 
 MAINTAINER Dimagi <devops@dimagi.com>
 
