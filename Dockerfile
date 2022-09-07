@@ -9,7 +9,7 @@ RUN apt-get update && apt-get -y install --no-upgrade \
     make \
     postgresql-$PG_MAJOR-plproxy \
     postgresql-server-dev-$PG_MAJOR \
-    python-docutils \
+    python3-docutils \
     unzip \
     wget \
   && apt-get clean \
