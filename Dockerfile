@@ -1,6 +1,6 @@
 # PostgreSQL service with pghashlib and PL-Proxy
 
-FROM postgres:10.17
+FROM postgres:14.3
 
 MAINTAINER Dimagi <devops@dimagi.com>
 
@@ -9,7 +9,7 @@ RUN apt-get update && apt-get -y install --no-upgrade \
     make \
     postgresql-$PG_MAJOR-plproxy \
     postgresql-server-dev-$PG_MAJOR \
-    python-docutils \
+    python3-docutils \
     unzip \
     wget \
   && apt-get clean \
