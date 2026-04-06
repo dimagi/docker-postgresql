@@ -2,7 +2,7 @@
 
 FROM postgres:18.3
 
-MAINTAINER Dimagi <devops@dimagi.com>
+LABEL maintainer="Dimagi <devops@dimagi.com>"
 
 RUN apt-get update && apt-get -y install --no-upgrade \
     gcc \
